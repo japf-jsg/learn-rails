@@ -35,7 +35,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'gibbon' # mail chimp
 gem 'high_voltage'
+gem 'jquery'
 gem 'jquery-rails'
+# gem 'jquery_ujs'
+gem 'jquery-ui-rails'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
