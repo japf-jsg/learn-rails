@@ -1,0 +1,22 @@
+<% content_for :title do %>Contact<% end %>
+<h3>
+  Contact
+</h3>
+
+<div class="form">
+  <%= form_with(model: @contact) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+    <br/>
+    <br/>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <br/>
+    <br/>
+    <%= f.label 'message'  %>
+    <%= f.text_area :content, size: '40x5' %>
+    <br/>
+    <br/>
+    <%= f.submit 'Submit', class: 'submit' %>
+  <% end %>
+</div>
